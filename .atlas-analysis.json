@@ -1,0 +1,78 @@
+{
+  "projectType": "frontend",
+  "projectName": "Theme Gen",
+  "projectDescription": "A visual theme generator for creating accessible, shareable color palettes with WCAG contrast auditing and export capabilities.",
+  "theme": "palm",
+  "primaryColor": "#4F46E5",
+  "lightColor": "#818CF8",
+  "darkColor": "#3730A3",
+  "navigation": {
+    "groups": [
+      {
+        "group": "Getting Started",
+        "pages": [
+          "introduction",
+          "quickstart",
+          "installation"
+        ]
+      },
+      {
+        "group": "Core Concepts",
+        "pages": [
+          "concepts/color-system",
+          "concepts/wcag-contrast",
+          "concepts/light-dark-mode",
+          "concepts/url-sharing"
+        ]
+      },
+      {
+        "group": "Features",
+        "pages": [
+          "features/theme-editor",
+          "features/color-picker",
+          "features/smart-shuffle",
+          "features/color-locking",
+          "features/export"
+        ]
+      },
+      {
+        "group": "API Reference",
+        "pages": [
+          "api/color-utilities",
+          "api/theme-context",
+          "api/types"
+        ]
+      },
+      {
+        "group": "Advanced",
+        "pages": [
+          "advanced/color-algorithms",
+          "advanced/oklch-color-space",
+          "advanced/contrast-calculations"
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "Visual theme editor with real-time preview",
+    "WCAG contrast auditing (AA/AAA compliance)",
+    "Smart palette generation with color locking",
+    "Light/Dark mode support with independent palettes",
+    "URL-based theme sharing",
+    "Multi-format export (CSS, Tailwind, SCSS)",
+    "EyeDropper API integration",
+    "Undo/redo functionality"
+  ],
+  "publicApiSurface": [
+    "generateColorPalette(baseColor, isDarkMode, lockedColors, harmonyMode)",
+    "getContrastRatio(foreground, background)",
+    "getWCAGContrastResult(foreground, background)",
+    "adaptColorsForMode(currentColors, targetIsDark, lockedColors)",
+    "pickOnColor(backgroundColor)",
+    "hexToRgb(hex), rgbToHex(rgb), hexToHsl(hex), hslToHex(hsl)",
+    "rgbToHsv(rgb), hsvToRgb(hsv)",
+    "mixOklch(color1, color2, ratio)",
+    "ThemeProvider, useTheme()",
+    "Theme, RGB, HSL, HSV, WCAGContrastResult types"
+  ]
+}
